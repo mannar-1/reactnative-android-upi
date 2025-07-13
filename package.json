@@ -1,0 +1,23 @@
+{
+  "name": "react-native-android-upi",
+  "version": "1.0.0",
+  "description": "Easy UPI Payment Integration for React Native",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "upi",
+    "payment",
+    "gpay",
+    "phonepe",
+    "paytm",
+    "bhim"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "*"
+  }
+}
