@@ -6,26 +6,45 @@ A simple React Native UPI payment integration for Android.
 
 ## Setup
 
-* Copy these files from node_modules/react-native-android-upi/android/src/main/java/com/rnupi/ to your project:
-  - RNGPayPackage.java
-  - RNAndroidUPI.java
+* Copy this folder from node_modules/react-native-android-upi/android/src/main/java/com/rnupi/ to your project:
+    - rnupi copy this folder
 
-* Create folder structure:
+* In your current project go to below path in android:
 ```
-android/app/src/main/java/com/rnupi/
+src/main/java/com
 ```
 
-* Paste both files in this folder
+* Paste the folder you copied
 
-* Add to MainApplication.kt:
+* open MainApplication and Add below to MainApplication.kt:
 ```kotlin
-import com.rnupi.RNGPayPackage
+import com.rnupi.RNAndroidUPIPackage
 
 // Inside getPackages()
-add(RNGPayPackage())
+add(RNAndroidUPIPackage())
 ```
 
-----
+* Add to android/app/src/main/AndroidManifest.xml (below `</application>` tag):
+```xml
+<queries>
+    <package android:name="com.google.android.apps.nbu.paisa.user" />
+    <package android:name="com.phonepe.app" />
+    <package android:name="net.one97.paytm" />
+    <package android:name="in.org.npci.upiapp" />
+    <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <data android:scheme="upi" />
+    </intent>
+</queries>
+```
+
+* After making these changes, clean and rebuild your project:
+```bash
+cd android
+./gradlew clean
+```
+
+This ensures the app builds freshly with the new changes.
 
 ## Basic Usage
 
