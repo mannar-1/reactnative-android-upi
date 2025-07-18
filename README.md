@@ -49,8 +49,8 @@ This ensures the app builds freshly with the new changes.
 ## Basic Usage
 
 ```javascript
-import { NativeModules } from 'react-native';
-const { RNGPay } = NativeModules;
+import UPIPayment from 'react-native-android-upi';
+
 
 const paymentData = {
     vpa: "merchant.vpa@upi",
@@ -63,7 +63,7 @@ const paymentData = {
 // Make payment using Google Pay
 const makeGPayPayment = async () => {
     try {
-        const response = await RNGPay.initiateGPayPayment(paymentData);
+        const response = await UPIPayment.initiateGPayPayment(paymentData);
         console.log('Success:', response);
     } catch (error) {
         console.error('Error:', error);
@@ -142,9 +142,7 @@ const response = await RNGPay.initiateUPIPayment(paymentData);
 ```javascript
 import React, { useState } from 'react';
 import { View, Button, Alert } from 'react-native';
-import { NativeModules } from 'react-native';
-
-const { RNGPay } = NativeModules;
+import UPIPayment from 'react-native-android-upi';
 
 const PaymentScreen = () => {
     const [loading, setLoading] = useState(false);
@@ -161,7 +159,7 @@ const PaymentScreen = () => {
                 transactionRef: "TXN_" + Date.now()
             };
 
-            const response = await RNGPay.initiateGPayPayment(paymentData);
+            const response = await UPIPayment.initiateGPayPayment(paymentData);
             Alert.alert('Success', 'Payment completed!');
             
         } catch (error) {
