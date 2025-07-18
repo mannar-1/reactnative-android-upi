@@ -77,27 +77,27 @@ const makeGPayPayment = async () => {
 
 * Check App Installation:
 ```javascript
-const isInstalled = await RNGPay.isAppInstalled("com.google.android.apps.nbu.paisa.user");
+const isInstalled = await UPIPayment.isAppInstalled("com.google.android.apps.nbu.paisa.user");
 ```
 
 * Google Pay Payment:
 ```javascript
-const response = await RNGPay.initiateGPayPayment(paymentData);
+const response = await UPIPayment.initiateGPayPayment(paymentData);
 ```
 
 * PhonePe Payment:
 ```javascript
-const response = await RNGPay.initiatePhonePePayment(paymentData);
+const response = await UPIPayment.initiatePhonePePayment(paymentData);
 ```
 
 * Paytm Payment:
 ```javascript
-const response = await RNGPay.initiatePaytmPayment(paymentData);
+const response = await UPIPayment.initiatePaytmPayment(paymentData);
 ```
 
 * Generic UPI Payment:
 ```javascript
-const response = await RNGPay.initiateUPIPayment(paymentData);
+const response = await UPIPayment.initiateUPIPayment(paymentData);
 ```
 
 ----
