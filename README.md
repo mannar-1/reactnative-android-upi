@@ -3,6 +3,13 @@
 A simple React Native UPI payment integration for Android.
 
 ----
+## About
+
+This package simplifies UPI payment integration in React Native Android apps, supporting all major payment apps (Google Pay, PhonePe, Paytm) and following the latest NPCI guidelines. Built to provide a seamless payment experience with minimal setup.
+
+## Tutorial
+
+📺 Watch the implementation tutorial: [React Native UPI Payment Integration](https://urlgeni.us/youtube/Vtkb)
 
 ## Setup
 

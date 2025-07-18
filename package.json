@@ -1,21 +1,53 @@
 {
   "name": "react-native-android-upi",
   "version": "1.0.5",
-  "description": "Easy UPI Payment Integration for React Native",
+  "description": "Easy UPI Payment Integration for React Native - Support for Google Pay, PhonePe, Paytm and other UPI apps",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "react-native",
+    "react native",
     "upi",
+    "upi-payment",
     "payment",
+    "payments",
+    "payment-gateway",
+    "payment integration",
+    "android payment",
+    "android-payment",
+    "mobile payment",
     "gpay",
+    "google-pay",
+    "googlepay",
     "phonepe",
+    "phone-pe",
     "paytm",
-    "bhim"
+    "bhim",
+    "bhim-upi",
+    "upi integration",
+    "react native payment",
+    "react-native-payment",
+    "react native upi",
+    "india",
+    "indian-payment",
+    "digital payment",
+    "online payment",
+    "android",
+    "react-native-android",
+    "react native upi",
+    "react-native-upi"
   ],
-  "author": "Your Name",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mannar-1/reactnative-android-upi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mannar-1/reactnative-android-upi/issues"
+  },
+  "homepage": "https://github.com/mannar-1/reactnative-android-upi#readme",
+  "author": "Sriranga Mannar",
   "license": "MIT",
   "peerDependencies": {
     "react-native": "*"
