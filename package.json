@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-upi",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy UPI Payment Integration for React Native",
   "main": "src/index.js",
   "scripts": {
